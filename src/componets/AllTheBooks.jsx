@@ -1,12 +1,11 @@
 import React, { useState, useEffect } from "react"
-import { Card, Button, Container, Row, Col } from "react-bootstrap"
+import {Container, Row, Col } from "react-bootstrap"
 import fantasy from "../books/fantasy.json"
 import history from "../books/history.json"
 import horror from "../books/horror.json"
 import romance from "../books/romance.json"
 import scifi from "../books/scifi.json"
 import "../CSS/AllTheBooks.css"
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 import 'react-lazy-load-image-component/src/effects/blur.css'
 import SingleBook from "./SingleBook"
 
