@@ -8,19 +8,19 @@ function SingleBook({ book, onBookSelect, selectedAsin}) {
 
     return (
         <Card 
-          className={`mb-4 card-container m-3 ${isSelected ? 'selected-style' : ''}`}
+          className={`card-container ${isSelected ? 'selected-style' : ''}`}
           onClick={() => onBookSelect(book)}
         >
             <LazyLoadImage
                 alt={book.title}
                 src={book.img}
-                className="card-img-top"
+                className=""
             />
             <Card.Body>
                 <Card.Title>{book.title}</Card.Title>
                 <Card.Text>{`Prezzo: ${book.price}€`}</Card.Text>
                 <Card.Text>{`Categoria: ${book.category}`}</Card.Text>
-                <Button variant="primary">Scopri Di Più 🔍</Button>
+                <Button variant="primary">Dettaglio🔍</Button>
             </Card.Body>
         </Card>
     )

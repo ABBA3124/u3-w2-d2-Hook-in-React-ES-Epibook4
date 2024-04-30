@@ -11,7 +11,7 @@ function BookList({ books }) {
   const filteredBooks = books.filter((book) => book.title.toLowerCase().includes(searchTerm.toLowerCase()))
 
   return (
-    <div className="container mt-3">
+    <div className="container mt-1">
       <Row>
         <Col md={8}>
           <Form>
