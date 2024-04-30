@@ -26,7 +26,7 @@ function BookList({ books }) {
               />
             </Form.Group>
           </Form>
-          <Row>
+          <Row className="row-gap-3">
             {filteredBooks.map((book, index) => (
               <Col key={index} sm={12} md={6} lg={4} xl={3}>
                 <SingleBook book={book} onBookSelect={setSelectedBook} selectedAsin={selectedBook ? selectedBook.asin : null} />
