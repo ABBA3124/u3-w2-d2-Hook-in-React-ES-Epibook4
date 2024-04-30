@@ -78,7 +78,9 @@ function CommentArea({ book }) {
         ) : (
           <>
             <CommentsList comments={comments} onDelete={deleteComment} />
+            <div className="text-center">
             <AddComment book={book} onAddComment={addComment} />
+            </div>
           </>
         )}
       </div>
